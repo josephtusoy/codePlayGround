@@ -6,7 +6,8 @@ namespace codePlayGround
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(String.Format("3256 is {0}", StringToIntNonParse.converToString("3256")));
+            Console.ReadLine();
         }
     }
 }
