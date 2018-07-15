@@ -8,7 +8,7 @@ namespace codePlayGround
     {
 
 
-        public static int converToString(String N)
+        public static int converToString(string N)
         {
             int result = 0;
             char[] digits = N.ToCharArray();

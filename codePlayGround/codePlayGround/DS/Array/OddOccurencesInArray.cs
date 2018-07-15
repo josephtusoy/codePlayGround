@@ -1,24 +1,25 @@
 ﻿using System;
-
-namespace codePlayGround
+using System.Collections.Generic;
+using System.Text;
+//https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
+namespace codePlayGround.DS.Array
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            printInt1(52345);
-            Console.ReadKey();
-        }
 
-        public static void printInt1(int n)
+    /*
+      static void Main(string[] args)
         {
             int[] s1 = { 5, 1, 1, 6, 2, 2, 4, 4, 5 };
             Console.Write(SolveMissingInteger(s1));
             Console.ReadKey();
-
+            Console.ReadKey();
         }
+     */
 
-        public static int SolveMissingInteger(int[] A)
+    class OddOccurencesInArray
+    {
+
+
+        public static int OddOccurences(int[] A)
         {
             if (A.Length <= 0)
                 return 0;
@@ -26,7 +27,7 @@ namespace codePlayGround
             if (A.Length == 1)
                 return A[1];
 
-            Array.Sort(A);
+            //Array.Sort(A);
 
             int current = 0;
             int satisfy = 0;
@@ -49,10 +50,5 @@ namespace codePlayGround
             // 1 2
         }
 
-
-
-
     }
 }
-
-
